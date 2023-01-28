@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+.app-div{
+  background-color: #FFF;
+  width: 100%;
+
+  overflow-x: hidden;
+}
+
+.header-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    min-height: 55px;
+    background-color: #F55A5A;
+    color: #FFFFFF;
+    font-family: 'Inter',sans-serif;
+}
+
+.header-div h1{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+}
+
+.header-div i{
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+}
+
+.journal-div{
+  font-family: 'Inter',sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 40px;
+  height: 25%;
+  display: flex;
+  font-size: 11px;
+  font-weight: 400;
+}
+.location-div{
+  font-weight: 400;
+  min-height: 15px;
+  display: flex;
+  align-items: center;
+  line-height: 15px;
+}
+
+.location-div i{
+  font-size: 15px;
+  color: #F55A5A;
+}
+
+.location-div a{
+  font-size: 15px;
+  color: #918E9B; 
+}
+
+.location-div p{
+  margin: 0 10px ;
+  text-transform: uppercase;
+  letter-spacing: 0.20em;
+}
+
+.desc-div{
+  width: 326px;
+  font-family: 'Inter';
+}
+
+.img-div{
+  width: 126px;
+  height: 170px;
+  margin-right: 20px;
+}
+
+.img-div img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.desc-div h2{
+  margin: 5px 0 15px 0;
+  color: #2B283A;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.desc-div h4{
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+.desc-p{
+  line-height: 15px;
+  margin-top: 10px;
 }
